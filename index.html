@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Multical</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/logo-cliente-1.png">
+
+    <style>
+        :root {
+            --color-primario: #1e3a8a;
+            --color-secundario: #0f172a; 
+            --color-acento: #f8fafc; 
+        }
+
+        .bg-primario { background-color: var(--color-primario); }
+        .text-primario { color: var(--color-primario); }
+        .border-primario { border-color: var(--color-primario); }
+        
+        .btn-principal {
+            background-color: var(--color-primario);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-principal:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased font-sans">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-items-center">
+            <div class="flex items-center">
+    <img src="assets/logo-cliente-1.png" alt="Logo de Multical" class="h-16 w-auto"></div>
+            
+            <a href="#ubicacion" class="btn-principal px-3 py-1.5 rounded-full text-xs font-bold inline-flex items-center gap-1.5">
+    <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+    Ver Ubicación
+</a>
+        </div>
+    
+</div>
+
+            
+        
+        </div>
+    </nav>
+
+    <section class="bg-acento py-20 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight" data-aos="fade-up">
+                Gestión inteligente de <span class="text-primario">vales electrónicos</span>
+            </h1>
+            <p class="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
+                En <b>Servicios Multical</b> fortalecemos la operación de tu empresa con servicios eficientes, seguros y confiables para la administración de beneficios y el crecimiento sostenible.
+            </p>
+            <div class="mt-10">
+                <a href="#ubicacion" class="btn-principal px-5 py-2 rounded-full text-sm font-semibold inline-flex items-center gap-2">
+    <i data-lucide="map-pin" class="w-4 h-4"></i>
+    Ver Ubicación
+</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-20 px-4 bg-white">
+        <!--<div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Nuestros Servicios</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-white p-8 rounded-xl border border-gray-100 shadow-lg hover:border-primario transition">
+                    <div class="text-primario mb-4">
+                        <i data-lucide="briefcase" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">Asesoría Integral</h3>
+                    <p class="mt-3 text-gray-600">Soluciones profesionales para cumplir con tus obligaciones legales y optimizar la gestión de tus recursos contables y financieros.</p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="300" class="bg-white p-8 rounded-xl border border-gray-100 shadow-lg hover:border-primario transition">
+                    <div class="text-primario mb-4">
+                        <i data-lucide="zap" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">Gestión Operativa</h3>
+                    <p class="mt-3 text-gray-600">Fortalecemos la operación de organizaciones de diversos sectores con un enfoque multidisciplinario y personalizado.</p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="500" class="bg-white p-8 rounded-xl border border-gray-100 shadow-lg hover:border-primario transition">
+                    <div class="text-primario mb-4">
+                        <i data-lucide="target" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">Desarrollo Organizacional</h3>
+                    <p class="mt-3 text-gray-600">Implementamos programas enfocados en mejorar la estructura interna, procesos y productividad de tu empresa.</p>
+                </div>
+            </div>
+        </div> -->
+        <div class="grid md:grid-cols-3 gap-8">
+    <div data-aos="fade-up" data-aos-delay="100" class="bg-white p-8 rounded-xl border border-gray-100 shadow-lg hover:border-primario transition">
+        <div class="text-primario mb-4">
+            <i data-lucide="credit-card" class="w-10 h-10"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900">Vales Electrónicos</h3>
+        <p class="mt-3 text-gray-600">Servicio eficiente y seguro para la administración y control de beneficios electrónicos, optimizando la gestión de recursos.</p>
+    </div>
+
+    <div data-aos="fade-up" data-aos-delay="300" class="bg-white p-8 rounded-xl border border-gray-100 shadow-lg hover:border-primario transition">
+        <div class="text-primario mb-4">
+            <i data-lucide="scale" class="w-10 h-10"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900">Asesoría Integral</h3>
+        <p class="mt-3 text-gray-600">Soluciones en las áreas legal, contable y financiera para asegurar el cumplimiento normativo y la toma de decisiones estratégicas.</p>
+    </div>
+
+    <div data-aos="fade-up" data-aos-delay="500" class="bg-white p-8 rounded-xl border border-gray-100 shadow-lg hover:border-primario transition">
+        <div class="text-primario mb-4">
+            <i data-lucide="trending-up" class="w-10 h-10"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900">Desarrollo Organizacional</h3>
+        <p class="mt-3 text-gray-600">Programas de planeación estratégica y fortalecimiento del talento humano para aumentar la productividad y competitividad.</p>
+    </div>
+</div>
+    </section>
+
+    <!-- <section class="py-16 bg-gray-50 px-4">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2" data-aos="fade-right">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Expertos en Eficiencia y Competitividad</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Nos distinguimos por integrar asesoría especializada que nos permite ofrecer un servicio completo, adaptado a las necesidades específicas de cada cliente para apoyar la toma de decisiones estratégicas.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                A través del análisis de procesos y la planeación estratégica, impulsamos el fortalecimiento del talento humano, elemento clave para la competitividad en el mercado actual.
+            </p>
+        </div>
+        <div class="md:w-1/2 h-80 rounded-2xl shadow-2xl overflow-hidden border-4 border-white" data-aos="fade-left">
+    <img 
+        src="assets/nosotros_multical.jpg" 
+        alt="Equipo de Servicios Multical trabajando en soluciones empresariales" 
+        class="w-full h-full object-cover object-center"
+    >
+    </div>
+    </div>
+</section>-->
+
+<section class="py-20 bg-gray-50 px-4">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Tu Aliado en Eficiencia Operativa</h2>
+                <p class="text-gray-700 leading-relaxed mb-6 italic border-l-4 border-primario pl-4">
+                    "Multical se posiciona como un aliado estratégico para empresas que buscan crecimiento sostenible mediante soluciones innovadoras y asesoría profesional de alta calidad."
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Nos especializamos en integrar asesoría multidisciplinaria para ofrecer un servicio personalizado. Apoyamos a nuestros clientes en la correcta administración de sus recursos y en el cumplimiento de sus obligaciones legales.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 text-gray-700">
+                        <i data-lucide="check-circle-2" class="text-green-600 w-5 h-5"></i> Optimización de procesos internos.
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-700">
+                        <i data-lucide="check-circle-2" class="text-green-600 w-5 h-5"></i> Análisis y planeación estratégica.
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-700">
+                        <i data-lucide="check-circle-2" class="text-green-600 w-5 h-5"></i> Seguridad en gestión de beneficios.
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="relative" data-aos="fade-left">
+                <div class="h-96 rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
+                    <img src="assets/nosotros_multical.jpg" alt="Multical Oficinas" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-primario text-white p-6 rounded-xl shadow-lg hidden md:block">
+                    <p class="text-2xl font-bold">+100%</p>
+                    <p class="text-xs uppercase tracking-wider">Compromiso y Seguridad</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="ubicacion" class="py-20 bg-white px-4">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900">Nuestra Ubicación</h2>
+            <p class="mt-4 text-gray-600">Visítanos en nuestras oficinas para una asesoría personalizada.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10 items-start">
+            <div class="bg-acento p-8 rounded-2xl border border-gray-200">
+                <div class="flex items-start gap-4 mb-8">
+                    <div class="bg-white p-3 rounded-lg shadow-sm text-primario">
+                        <i data-lucide="map-pin" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900">Dirección</h4>
+                        <p class="text-gray-600 mt-1">
+                            Carr. Monterrey - Saltillo 7290 Num Int 112, Los Rodríguez,<br>
+                            Saltillo, Coahuila. C.P. 25200
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="bg-white p-3 rounded-lg shadow-sm text-primario">
+                        <i data-lucide="clock" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900">Horario de Atención</h4>
+                        <p class="text-gray-600 mt-1">Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+                
+                <div class="mt-10">
+                    <a href="https://maps.app.goo.gl/bXHpYF8JxdKoWVPDA" target="_blank" class="text-primario font-bold hover:underline inline-flex items-center gap-2">
+                        Cómo llegar en Google Maps
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="h-80 md:h-full min-h-[350px] rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.5216014353077!2d-100.97176702515314!3d25.487645219876217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86881327e306ea4f%3A0xe45d9d9615c10003!2sCarr.%20Monterrey%20-%20Saltillo%207290%2C%20Los%20Rodr%C3%ADguez%2C%2025200%20Saltillo%2C%20Coah.!5e0!3m2!1ses-419!2smx!4v1774579235379!5m2!1ses-419!2smx" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="py-8 bg-gray-900 text-gray-500 text-center text-sm">
+        &copy; 2026 Servicios Multical. Todos los derechos reservados.
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Duración de la animación en milisegundos (1 segundo)
+    once: true,     // La animación solo ocurre una vez al bajar
+    offset: 100     // Cuántos píxeles antes de que aparezca el elemento debe activarse
+  });
+</script>
+</body>
+</html>
+
+
+
