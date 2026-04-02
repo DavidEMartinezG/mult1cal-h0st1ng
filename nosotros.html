@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Multical</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/logo-cliente-1.png">
+
+    <style>
+        :root {
+            --color-primario: #1e3a8a;
+            --color-secundario: #0f172a; 
+            --color-acento: #f8fafc; 
+        }
+
+        .bg-primario { background-color: var(--color-primario); }
+        .text-primario { color: var(--color-primario); }
+        .border-primario { border-color: var(--color-primario); }
+        
+        .btn-principal {
+            background-color: var(--color-primario);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-principal:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+<header class="fixed w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2">
+            <div class="flex items-center">
+            <img src="assets/logo-cliente-1.png" alt="Logo" class="h-16 w-auto">
+        </div>
+        
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8 font-medium text-gray-700">
+            <a href="index.html" class="hover:text-blue-600 transition">Inicio</a>
+            <a href="servicios.html" class="hover:text-blue-600 transition">Servicios</a>
+            <a href="nosotros.html" class="hover:text-blue-600 transition">Nosotros</a>
+            <a href="ubicacion.html" class="hover:text-blue-600 transition-colors">Ubicación</a>
+            <a href="ubicacion.html" class="bg-blue-900 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-blue-700 transition">
+                Contacto
+            </a>
+        </nav>
+
+        <button id="btn-menu" class="md:hidden text-gray-900 p-2">
+            <i data-lucide="menu" class="w-8 h-8"></i>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-xl">
+        <div class="flex flex-col p-6 gap-4 font-semibold text-gray-700">
+            <a href="index.html" class="py-2 border-b border-gray-50 hover:text-blue-600">Inicio</a>
+            <a href="servicios.html" class="py-2 border-b border-gray-50 hover:text-blue-600">Servicios</a>
+            <a href="nosotros.html" class="py-2 border-b border-gray-50 hover:text-blue-600">Nosotros</a>
+            <a href="ubicacion.html" class="py-3 bg-blue-600 text-white text-center rounded-xl font-bold">
+                Ver Ubicación
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="py-24 px-4 bg-white">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        
+        <div data-aos="fade-right">
+            <span class="text-blue-600 font-bold tracking-widest uppercase text-sm bg-blue-50 px-3 py-1 rounded-full">¿Quiénes Somos?</span>
+            <h2 class="text-4xl font-black text-gray-900 mt-5 mb-8 tracking-tighter leading-tight">
+                Un equipo comprometido con <span class="text-blue-600">tu tranquilidad administrativa</span>
+            </h2>
+            <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                En <b>Servicios Multical</b>, somos una empresa en Saltillo, Coahuila, que nace de la necesidad de ofrecer soluciones administrativas frescas y confiables. Nuestro objetivo es posicionarnos como el aliado estratégico de negocios que, como nosotros, buscan crecer y consolidarse en la región.
+            </p>
+            <p class="text-gray-600 text-base leading-relaxed mb-10">
+                Trabajamos día a día construyendo relaciones de confianza, sabiendo que nuestro reconocimiento llega solo cuando nuestros clientes alcanzan sus metas operativas.
+            </p>
+            
+            <a href="servicios.html" class="inline-flex items-center gap-2 bg-gray-900 text-white px-7 py-3 rounded-xl font-bold hover:bg-gray-800 transition shadow-lg">
+                Ver cómo te ayudamos <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+        </div>
+
+        <div class="relative" data-aos="fade-left">
+            <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-8 border-gray-50">
+                <img src="assets/nosotros_multical.jpg" alt="Equipo de Multical trabajando" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+            </div>
+            <div class="absolute -bottom-8 -right-8 w-40 h-40 bg-blue-100 rounded-3xl -z-10"></div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 px-4 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h3 class="text-3xl font-bold text-gray-900">Nuestro Camino al Reconocimiento</h3>
+            <p class="text-gray-600 mt-4 max-w-xl mx-auto">Nos basamos en pilares sólidos para asegurar que cada servicio que te brindamos sea de excelencia.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <div class="bg-white p-10 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-blue-600 mb-6 flex justify-center md:justify-start">
+                    <i data-lucide="target" class="w-10 h-10"></i>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-3 text-center md:text-left">Misión</h4>
+                <p class="text-gray-600 text-sm leading-relaxed text-center md:text-left">
+                    Facilitar la operación de nuestros clientes mediante una gestión administrativa transparente, segura y eficiente, permitiéndoles enfocar sus recursos en el crecimiento de sus negocios.
+                </p>
+            </div>
+
+            <div class="bg-white p-10 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-blue-600 mb-6 flex justify-center md:justify-start">
+                    <i data-lucide="eye" class="w-10 h-10"></i>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-3 text-center md:text-left">Visión</h4>
+                <p class="text-gray-600 text-sm leading-relaxed text-center md:text-left">
+                    Consolidarnos como el proveedor de servicios administrativos y vales más confiable en Saltillo y Ramos Arizpe, siendo reconocidos por nuestra ética profesional y atención personalizada.
+                </p>
+            </div>
+
+            <div class="bg-white p-10 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="300">
+                <div class="text-blue-600 mb-6 flex justify-center md:justify-start">
+                    <i data-lucide="award" class="w-10 h-10"></i>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-3 text-center md:text-left">Nuestro Compromiso</h4>
+                <p class="text-gray-600 text-sm leading-relaxed text-center md:text-left">
+                    Cada proceso que manejamos, ya sea la gestión de vales o la asesoría fiscal, se realiza bajo los más estrictos estándares de calidad y cumplimiento legal. Tu confianza es nuestro mayor activo.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="py-8 bg-gray-900 text-gray-500 text-center text-sm">
+        &copy; 2026 Servicios Multical. Todos los derechos reservados.
+    </footer>
+
+<a href="https://wa.me/+528444649290" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-[100] flex items-center justify-center border-4 border-white">
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+</a>
+
+<script>
+        lucide.createIcons();
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Duración de la animación en milisegundos (1 segundo)
+    once: true,     // La animación solo ocurre una vez al bajar
+    offset: 100     // Cuántos píxeles antes de que aparezca el elemento debe activarse
+  });
+</script>
+
+<script>
+    // Inicializar iconos de Lucide
+    lucide.createIcons();
+
+    // Lógica del Menú Móvil
+    const btnMenu = document.getElementById('btn-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    btnMenu.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Cerrar menú al hacer clic en un enlace (opcional)
+    const links = mobileMenu.querySelectorAll('a');
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+</script>
+</body>
+
+</html>

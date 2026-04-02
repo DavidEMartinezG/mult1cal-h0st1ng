@@ -35,10 +35,10 @@
         }
     </style>
 </head>
-<body class="text-gray-800 antialiased font-sans">
 
-    
-<header class="fixed w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+
+<body>
+    <header class="fixed w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
     <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
         <a href="index.html" class="flex items-center gap-2">
             <div class="flex items-center">
@@ -74,72 +74,38 @@
     </div>
 </header>
 
-<script>
-    window.onscroll = function() {
-        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (winScroll / height) * 100;
-        document.getElementById("progress-bar").style.width = scrolled + "%";
-    };
-</script>
-
-    
-
-   <section class="py-20 text-center">
-    <h1 class="text-5xl font-black text-gray-900 mb-6" data-aos="zoom-in">Gestión Inteligente para <br><span class="text-blue-900">Empresas Modernas</span></h1>
-    <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-10">Optimizamos tus recursos administrativos y beneficios fiscales con soluciones a la medida de tu negocio.</p>
-    <div class="flex justify-center gap-4">
-        <a href="servicios.html" class="bg-gray-900 text-white px-8 py-3 rounded-lg font-bold hover:bg-gray-800 transition">Nuestros Servicios</a>
-        <a href="https://wa.me/+528444649290" class="border-2 border-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition">Hablar con un asesor</a>
-    </div>
-</section>
-
-<section class="bg-blue-50 py-16 px-4">
-    <div class="max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-            
-            <div data-aos="fade-up" data-aos-delay="100">
-                <div class="text-blue-600 mb-4 flex justify-center">
-                    <i data-lucide="briefcase" class="w-10 h-10"></i>
-                </div>
-                <h4 class="text-xl font-bold text-gray-900 mb-2">Experiencia</h4>
-                <p class="text-gray-600 text-sm leading-relaxed px-4">
-                    Años de trayectoria brindando soluciones administrativas sólidas en la región.
-                </p>
+<section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
+        <div class="md:col-span-1 space-y-10">
+            <h2 class="text-4xl font-bold text-gray-900">Contáctanos</h2>
+            <div>
+                <p class="text-gray-500 font-bold uppercase text-xs mb-2">Dirección</p>
+                <p class="text-gray-900 font-medium italic">Carr. Monterrey - Saltillo 7290 Num Int 112, Los Rodríguez,<br>
+                            Saltillo, Coahuila. C.P. 25200</p>
             </div>
-
-            <div data-aos="fade-up" data-aos-delay="200">
-                <div class="text-blue-600 mb-4 flex justify-center">
-                    <i data-lucide="shield-check" class="w-10 h-10"></i>
-                </div>
-                <h4 class="text-xl font-bold text-gray-900 mb-2">Seguridad</h4>
-                <p class="text-gray-600 text-sm leading-relaxed px-4">
-                    Manejo confidencial y responsable de cada uno de tus procesos empresariales.
-                </p>
+            <div>
+                <p class="text-gray-500 font-bold uppercase text-xs mb-2">Horario de atención</p>
+                <p class="text-gray-900">Lun - Vie: 9:00 AM - 6:00 PM</p>
             </div>
-
-            <div data-aos="fade-up" data-aos-delay="300">
-                <div class="text-blue-600 mb-4 flex justify-center">
-                    <i data-lucide="user-check" class="w-10 h-10"></i>
-                </div>
-                <h4 class="text-xl font-bold text-gray-900 mb-2">Atención Directa</h4>
-                <p class="text-gray-600 text-sm leading-relaxed px-4">
-                    Sin intermediarios. Un equipo especializado siempre listo para resolver tus dudas.
-                </p>
-            </div>
-
+            <a href="https://wa.me/+528444649290" class="inline-block bg-green-500 text-white px-8 py-4 rounded-2xl font-bold hover:bg-green-600 transition shadow-lg shadow-green-200">
+                Chatear con Ventas
+            </a>
+        </div>
+        <div class="md:col-span-2 h-[500px] rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.5216014353077!2d-100.97176702515314!3d25.487645219876217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86881327e306ea4f%3A0xe45d9d9615c10003!2sCarr.%20Monterrey%20-%20Saltillo%207290%2C%20Los%20Rodr%C3%ADguez%2C%2025200%20Saltillo%2C%20Coah.!5e0!3m2!1ses-419!2smx!4v1774579235379!5m2!1ses-419!2smx" class="w-full h-full grayscale hover:grayscale-0 transition-all duration-700"></iframe>
         </div>
     </div>
 </section>
-    <footer class="py-8 bg-gray-900 text-gray-500 text-center text-sm">
+
+<footer class="py-8 bg-gray-900 text-gray-500 text-center text-sm">
         &copy; 2026 Servicios Multical. Todos los derechos reservados.
     </footer>
 
-    <a href="https://wa.me/+528444649290" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-[100] flex items-center justify-center border-4 border-white">
+<a href="https://wa.me/+528444649290" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-[100] flex items-center justify-center border-4 border-white">
     <i data-lucide="message-circle" class="w-7 h-7"></i>
 </a>
 
-    <script>
+<script>
         lucide.createIcons();
     </script>
 
@@ -174,6 +140,3 @@
 </script>
 </body>
 </html>
-
-
-
